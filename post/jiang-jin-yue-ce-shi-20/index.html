@@ -1,135 +1,130 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>江浸月测试2.0 | 江浸月个人博客</title>
-<meta name="description" content="放假无聊弄弄">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zhuoyy.github.io/favicon.ico?v=1586067210200">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://zhuoyy.github.io/favicon.ico?v=1586067832826">
 <link rel="stylesheet" href="https://zhuoyy.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="明天就要回广州了，假期就这么过去了，好快，真羡慕在学校的时候有长假，现在三天的假期也是奢望
+..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://zhuoyy.github.io">
-        <img class="avatar" src="https://zhuoyy.github.io/images/avatar.png?v=1586067210200" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://zhuoyy.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zhuoyy.github.io">
+        <img src="https://zhuoyy.github.io/images/avatar.png?v=1586067832826" class="site-logo">
         <h1 class="site-title">江浸月个人博客</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-            <div class="feature-container" style="background-image: url('https://zhuoyy.github.io/post-images/jiang-jin-yue-ce-shi-20.jpg')">
-            </div>
-          
-          <h2 class="post-title">江浸月测试2.0</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-04-05</span>
-            
-          </div>
-          <div class="post-content">
-            <p>明天就要回广州了，假期就这么过去了，好快，真羡慕在学校的时候有长假，现在三天的假期也是奢望<img src="https://zhuoyy.github.io/post-images/1586067191542.jpg" alt="" loading="lazy"></p>
-
-          </div>
-        </div>
-
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
         
-          <div class="next-post">
-            <a class="purple-link" href="https://zhuoyy.github.io/post/jiang-jin-yue-ce-shi/">
-              <h3 class="post-title">
-                下一篇：江浸月测试
-              </h3>
-            </a>
-          </div>
-          
-      </div>
-
       
-
-      <div class="site-footer">
-  <div class="slogan">放假无聊弄弄</div>
-  <div class="social-container">
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
-      
-    
+    </div>
+    <div class="site-description">
+      放假无聊弄弄
+    </div>
+    <div class="site-footer">
+      江浸月 by <a href="zhuoyy.github.io" target="_blank">Gridea</a> | <a class="rss" href="https://zhuoyy.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
-  江浸月 by <a href="zhuoyy.giehub.io" target="_blank">Gridea</a> | <a class="rss" href="https://zhuoyy.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
 
-    </div>
-    <script type="application/javascript">
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">江浸月测试2.0</h2>
+            <div class="post-date">2020-04-05</div>
+            
+              <div class="feature-container" style="background-image: url('https://zhuoyy.github.io/post-images/jiang-jin-yue-ce-shi-20.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>明天就要回广州了，假期就这么过去了，好快，真羡慕在学校的时候有长假，现在三天的假期也是奢望<img src="https://zhuoyy.github.io/post-images/1586067191542.jpg" alt="" loading="lazy"></p>
 
-hljs.initHighlightingOnLoad()
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zhuoyy.github.io/post/jiang-jin-yue-ce-shi/">
+                  <h3 class="post-title">
+                    江浸月测试
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -139,6 +134,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 
