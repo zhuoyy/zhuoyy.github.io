@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhuoyy.github.io</id>
     <title>江浸月个人博客</title>
-    <updated>2020-04-05T06:08:32.173Z</updated>
+    <updated>2020-04-05T06:13:33.622Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhuoyy.github.io"/>
     <link rel="self" href="https://zhuoyy.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://zhuoyy.github.io/images/avatar.png</logo>
     <icon>https://zhuoyy.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 江浸月个人博客</rights>
+    <entry>
+        <title type="html"><![CDATA[江浸月测试2.0]]></title>
+        <id>https://zhuoyy.github.io/post/jiang-jin-yue-ce-shi-20/</id>
+        <link href="https://zhuoyy.github.io/post/jiang-jin-yue-ce-shi-20/">
+        </link>
+        <updated>2020-04-05T06:10:37.000Z</updated>
+        <content type="html"><![CDATA[<p>明天就要回广州了，假期就这么过去了，好快，真羡慕在学校的时候有长假，现在三天的假期也是奢望<img src="https://zhuoyy.github.io/post-images/1586067191542.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[江浸月测试]]></title>
         <id>https://zhuoyy.github.io/post/jiang-jin-yue-ce-shi/</id>
